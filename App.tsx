@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { Layout } from './components/Layout';
 import { DemoDashboard } from './components/DemoDashboard';
 import { IconArrowRight, IconShield, IconZap, IconSearch, IconSlack, IconDrive, IconCheck, IconMapPin, IconScan, IconNotion, IconHubspot, IconBot, IconFileText, IconLinear, IconBuilding, IconMail, IconNexus, IconUsers, IconScale, IconCreditCard, IconSalesforce, IconZapier, IconAsana, IconQuickBooks, IconServer, IconWifi, IconActivity, IconGlobe, IconQuote, IconStar } from './components/Icons';
-import { SiSlack, SiStripe, SiZapier, SiNotion, SiHubspot, SiSalesforce, SiAsana, SiTrello, SiDropbox, SiGoogle, SiLinear } from "react-icons/si";
+import { SiSlack, SiStripe, SiZapier, SiNotion, SiHubspot, SiSalesforce, SiAsana, SiTrello, SiDropbox, SiGoogle, SiLinear, SiQuickbooks } from "react-icons/si";
 
 // --- NEW HIGH-TECH AI BACKGROUND COMPONENT (Bland.ai Style) ---
 const AIProcessingNetwork = () => {
@@ -612,14 +612,14 @@ const ReviewsSection = () => {
 // --- LOGO TICKER COMPONENT ---
 const LogoTicker = () => {
     const logos = [
-        { name: "Slack", icon: IconSlack },
-        { name: "Notion", icon: IconNotion },
-        { name: "HubSpot", icon: IconHubspot },
-        { name: "Linear", icon: IconLinear },
-        { name: "Salesforce", icon: IconSalesforce },
-        { name: "Zapier", icon: IconZapier },
-        { name: "Asana", icon: IconAsana },
-        { name: "QuickBooks", icon: IconQuickBooks },
+        { name: "Slack", icon: SiSlack, color: "#4A154B" },
+        { name: "Notion", icon: SiNotion, color: "#000000" },
+        { name: "HubSpot", icon: SiHubspot, color: "#FF7A59" },
+        { name: "Linear", icon: SiLinear, color: "#5E6AD2" },
+        { name: "Salesforce", icon: SiSalesforce, color: "#00A1E0" },
+        { name: "Zapier", icon: SiZapier, color: "#FF4A00" },
+        { name: "Asana", icon: SiAsana, color: "#F06A6A" },
+        { name: "QuickBooks", icon: SiQuickbooks, color: "#2CA01C" },
     ];
     // Triplicate for smooth infinite scroll
     const allLogos = [...logos, ...logos, ...logos];
@@ -634,7 +634,9 @@ const LogoTicker = () => {
                 <div className="flex gap-20 animate-[scrollX_40s_linear_infinite] w-max px-6 items-center hover:pause">
                     {allLogos.map((logo, idx) => (
                         <div key={idx} className="flex items-center gap-3 text-black hover:text-black transition-colors duration-300 group cursor-default">
-                            <logo.icon className="w-6 h-6 grayscale group-hover:grayscale-0 transition-all" />
+                            <div className="grayscale group-hover:grayscale-0 transition-all">
+                                <logo.icon size={24} color={logo.color} />
+                            </div>
                             <span className="font-bold text-lg font-sans tracking-tight">{logo.name}</span>
                         </div>
                     ))}
