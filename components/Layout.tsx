@@ -7,10 +7,10 @@ const Header = () => (
         <div className="w-6 h-6 bg-black rounded-md flex items-center justify-center text-white text-xs font-serif">N</div>
         Nexus
       </div>
-      
+
       <nav className="hidden md:flex items-center gap-8 text-sm text-gray-500 font-medium">
-        <a href="#features" className="hover:text-black transition-colors">Produit</a>
-        <a href="#domiciliation" className="hover:text-black transition-colors">Domiciliation</a>
+        <a href="#product" className="hover:text-black transition-colors">Produit</a>
+        <a href="#infrastructure-assets" className="hover:text-black transition-colors">Domiciliation</a>
         <a href="#pricing" className="hover:text-black transition-colors">Tarifs</a>
       </nav>
 
@@ -36,7 +36,7 @@ const Footer = () => (
           L'infrastructure administrative nouvelle génération pour les entrepreneurs ambitieux.
         </p>
       </div>
-      
+
       <div className="flex gap-20">
         <div>
           <h4 className="text-gray-900 font-bold mb-6 text-sm">Produit</h4>
@@ -70,9 +70,9 @@ const Footer = () => (
     <div className="max-w-[1200px] mx-auto px-6 mt-20 pt-8 border-t border-gray-50 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-400">
       <p>© 2024 Nexus Inc. Tous droits réservés.</p>
       <div className="flex gap-6">
-         <a href="#" className="hover:text-gray-900">Twitter</a>
-         <a href="#" className="hover:text-gray-900">LinkedIn</a>
-         <a href="#" className="hover:text-gray-900">Instagram</a>
+        <a href="#" className="hover:text-gray-900">Twitter</a>
+        <a href="#" className="hover:text-gray-900">LinkedIn</a>
+        <a href="#" className="hover:text-gray-900">Instagram</a>
       </div>
     </div>
   </footer>

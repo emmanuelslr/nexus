@@ -301,7 +301,7 @@ const StrategicFoundationSection = () => {
     ];
 
     return (
-        <section className="min-h-[90vh] flex flex-col bg-white border-t border-gray-100 overflow-hidden relative">
+        <section id="infrastructure-assets" className="min-h-[90vh] flex flex-col bg-white border-t border-gray-100 overflow-hidden relative">
             {/* Technical Grid Background */}
             <div className="absolute inset-0 pointer-events-none opacity-[0.04]" style={{ backgroundImage: 'linear-gradient(#000 1px, transparent 1px), linear-gradient(90deg, #000 1px, transparent 1px)', backgroundSize: '20px 20px' }}></div>
 
@@ -740,7 +740,7 @@ function App() {
             <LogoTicker />
 
             {/* Demo Section */}
-            <section className="bg-white py-16 border-b border-gray-100 relative z-20">
+            <section id="product" className="bg-white py-16 border-b border-gray-100 relative z-20">
                 <div className="max-w-[1400px] mx-auto px-4">
                     <div className="text-center mb-12">
                         <h2 className="text-4xl font-bold tracking-tighter mb-3 text-gray-900">La fin du cauchemar administratif.</h2>
@@ -1067,7 +1067,7 @@ function App() {
                         <div className="bg-white p-8 rounded-2xl border border-gray-200 hover:border-gray-300 transition-all duration-300 hover:-translate-y-1 group">
                             <h3 className="font-bold text-gray-900 mb-2 text-lg">Freelance</h3>
                             <div className="flex items-baseline gap-1 mb-6">
-                                <span className="text-4xl font-bold tracking-tighter">29€</span>
+                                <span className="text-4xl font-bold tracking-tighter">19€</span>
                                 <span className="text-gray-400 text-sm">/mois</span>
                             </div>
                             <p className="text-xs text-gray-500 mb-8 leading-relaxed">Pour les indépendants qui veulent séparer vie pro et vie perso.</p>
@@ -1091,7 +1091,7 @@ function App() {
                             <div className="absolute top-6 right-6 bg-white text-black px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest">Populaire</div>
                             <h3 className="font-bold text-white mb-2 text-lg">Business</h3>
                             <div className="flex items-baseline gap-1 mb-6">
-                                <span className="text-4xl font-bold tracking-tighter">79€</span>
+                                <span className="text-4xl font-bold tracking-tighter">29€</span>
                                 <span className="text-gray-400 text-sm">/mois</span>
                             </div>
                             <p className="text-xs text-gray-400 mb-8 leading-relaxed">Pour les sociétés qui veulent automatiser tout leur administratif.</p>
